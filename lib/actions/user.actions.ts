@@ -42,4 +42,8 @@ export const getDocumentUsers = async ({roomId, currentUser, text} : {roomId : s
             return parseStringify(users);
         }
     }
+    catch (error) {
+        console.error(error)
+    }
+    
 }
